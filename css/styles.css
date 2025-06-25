@@ -1,0 +1,387 @@
+:root {
+  --footer-text-color: #F4F4FD;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #434455;
+  background-color: #fff;
+  margin: 0;
+  line-height: 1.5;
+  
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.hero.section {
+  padding: 188px 0 188px;
+  background-color: #2E2F42B2;
+	background-image: linear-gradient(
+	to bottom, 
+	rgba(46, 47, 66, 0.7)
+  ),
+  url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section  {
+padding: 120px 0 120px;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-header {
+   width: 1440px;
+  height: 72px;
+  margin: 0 auto;
+  border-bottom: 1px solid #E7E9FC;
+  
+}
+
+.header-nav,
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  gap: 40px;
+}
+
+.nav-list,
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
+
+.logo {
+  color: #4d5ae5;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  text-transform: uppercase;
+  margin-right: 76px; 
+}
+
+.logo .logo-part {
+  color: #2e2f42;
+}
+
+.nav-list a {
+  color: #2e2f42;
+  font-weight: 500;
+}
+.nav-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 24px 0;
+  color: #2e2f42;
+  font-weight: 500;
+  text-decoration: none;
+}
+.contact-info a {
+  color: #434455;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.contact-info a:hover,
+.contact-info a:focus {
+  color: #404bbf;
+}
+
+.hero {
+  text-align: center;
+  background-color: #2E2F42;
+  color: white;
+  padding: 120px 0 120px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-services {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  border-radius: 4px;
+  background-color: #4D5AE5;
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-services:hover,
+.btn-services:focus {
+  background-color:#404BBF;
+}
+
+.values-list {
+  display: flex;
+  gap: 24px;
+  
+}
+
+.values-list li {
+  width: calc((100% - 72px) / 4);
+ }
+
+.card-content{
+  text-align: center;
+}
+
+
+.value-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+   text-align: left; 
+   
+}
+
+.value-icon {
+  display: block;
+  fill: currentColor;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.value-icon:hover   ,
+.value-icon:focus-within  {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+
+.team-info {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  padding: 32px 0;
+   text-align: center;
+   margin-bottom: 8px;  
+   
+}
+
+.team-list {
+  background-color: #F4F4FD;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 36px;
+  margin-bottom: 72px;
+  color: #2E2F42;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+ 
+  }
+
+ .team-list ul {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.team-item {
+  background-color: #fff;
+  max-width: 264px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: calc((100% - 72px)/4); 
+  text-align: center;
+  row-gap: 48px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow:0px 3px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.icon {
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.icon:hover   ,
+.icon:focus-within  {
+
+   --color1: #404bbf;                
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+}
+.portfolio-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 0;
+  row-gap: 48px;
+ 
+}
+
+
+.portfolio-list li,
+.list-item {
+  background-color: #fff;
+  border: 1px solid #E7E9FC;
+   box-sizing: border-box;
+   width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-list li:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-link {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #2E2F42;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+
+.footer-links {
+  background-color: #2e2f42;
+  color: white;
+  padding: 100px 0;
+  
+
+}
+
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4D5AE5;
+  display: inline-block; 
+  margin-bottom: 16px
+}
+
+.footer-logo .logo-part {
+  color:#f4f4fd;
+}
+
+.footer-text {
+  line-height: 1.5;
+  color: var(--footer-text-color);
+  max-width: 312px;
+  margin-top: 16px;
+  
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+  border: 0;
+}
+
+
+
+/* Виправлення відповідно до вимог */
+
+.list-item:first-child {
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card {
+  padding: 32px 0;
+}
+
+.team-name {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.team-role {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.card-content {
+  padding: 32px 16px; /* ✅ внутренние отступы */
+  border: 1px solid #e7e9fc; /* ✅ рамка по периметру */
+  border-top: none; /* ✅ убираем верхнюю границу */
+}
+
+.value-title {
+  margin-bottom: 8px; /* ✅ отступ между заголовком и параграфом */
+}
+
+.team-subtitle {
+  margin-bottom: 8px; /* ✅ отступ между заголовком и параграфом */
+}
