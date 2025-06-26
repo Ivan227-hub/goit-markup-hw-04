@@ -482,7 +482,22 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 24px;
   fill: var(--footer-text-color, #f4f4fd);
 }
+.footer-links .social-link:hover,
+.footer-links .social-link:focus {
+  background-color: #31d0aa;   /* ✔ как требует ТЗ */
+}
 
+/* 2. В футере между иконками нужен gap 24 px, а не 16 */
+
+.footer-links .social-list {
+  gap: 24px;                   /* ✔ исправлено */
+}
+
+/* 3. Цвет текста «Social media» должен быть чисто белым */
+
+.footer-links .social-title {
+  color: #FFFFFF;              /* ✔ без переменной */
+}
 
 .footer-logo {
   font-family: 'Raleway', sans-serif;
