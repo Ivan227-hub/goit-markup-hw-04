@@ -124,11 +124,15 @@ a {
   color: #2e2f42;
   font-weight: 500;
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* ✔ плавный переход */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent; /* стартовий фон */
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #404bbf;
+  color: #fff; /* можна залишити або змінити на білий для кращої читабельності */
+  background-color: #404bbf; /* Додаємо фон при наведенні та фокусі */
+  border-radius: 4px; /* опціонально, щоб фон виглядав гарно */
+  outline: none; /* щоб видалити стандартний контур при фокусі, якщо хочеш */
 }
 
 /* активний пункт меню */
@@ -449,7 +453,7 @@ a {
 
 .social-list {
   display: flex;
-  gap: 16px;
+  gap: 24px;
 }
 
 .social-item {
@@ -470,7 +474,7 @@ a {
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #31d0aa;
+  background-color:  #404bbf;
 }
 
 .social-icon {
