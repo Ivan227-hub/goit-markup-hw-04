@@ -40,15 +40,20 @@ img {
 
 .hero.section {
   padding: 188px 0 188px;
-  background-color: #2E2F42B2;
 	background-image: linear-gradient(
 	to bottom, 
-	rgba(46, 47, 66, 0.7)
+	rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)
   ),
   url(../images/hero.jpg);
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
+  text-align: center;  
+ background-color: #2E2F42;     /* теж переносимо сюди, щоб не робити друге правило */
+  color: #fff;  
 }
 .section  {
 padding: 120px 0 120px;
@@ -72,7 +77,9 @@ a {
   height: 72px;
   margin: 0 auto;
   border-bottom: 1px solid #E7E9FC;
-  
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+              0px 1px 1px rgba(46, 47, 66, 0.16),
+              0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav,
@@ -112,12 +119,43 @@ a {
 }
 .nav-link {
   display: inline-block;
-  margin-bottom: 16px;
   padding: 24px 0;
+  margin-bottom: 16px;
   color: #2e2f42;
   font-weight: 500;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* ✔ плавный переход */
 }
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+/* активний пункт меню */
+.nav-link.current {
+  position: relative;
+  color: #404bbf;
+}
+
+.nav-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
+/* ссылки контактов */
+.contact-info .nav-link {
+  margin-bottom: 0;
+  color: #434455;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contact-info a {
   color: #434455;
   font-weight: 400;
@@ -164,6 +202,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-family: "Roboto", sans-serif;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-services:hover,
