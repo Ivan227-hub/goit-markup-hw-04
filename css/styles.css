@@ -323,7 +323,7 @@ a {
 }
 
 
-.social-list {                   /* ≥3 латин. символи, маленькі, можна дефіс */
+.team-members-list .social-list {                   /* ≥3 латин. символи, маленькі, можна дефіс */
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -490,7 +490,7 @@ a {
 /* 2. В футере между иконками нужен gap 24 px, а не 16 */
 
 .footer-links .social-list {
-  gap: 24px;                   /* ✔ исправлено */
+  gap: 16px;                   /* ✔ исправлено */
 }
 
 /* 3. Цвет текста «Social media» должен быть чисто белым */
